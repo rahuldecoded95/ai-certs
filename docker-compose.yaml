@@ -1,0 +1,15 @@
+#version: '3.8'
+
+services:
+  app:
+    image: ai-cert
+    build: .
+    command: python3 -u app.py
+    environment:
+      PORT: 5000
+      FLASK_ENV: prod
+      DEBUG: "False"
+    volumes:
+      - .:/app
+    stdin_open: true
+    network_mode: host

@@ -1,0 +1,15 @@
+# Virtualenv
+.venv
+venv
+
+# env
+.env
+
+#logs
+logs
+
+#uploads
+uploads
+
+.idea
+__pycache__/
