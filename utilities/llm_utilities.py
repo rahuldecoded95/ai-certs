@@ -36,7 +36,7 @@ class LLMUtilities:
             messages=[
                 {
                     "role": "system",
-                    "content": "You are a Sentiment Analysis API that outputs recipes in JSON.\n"
+                    "content": "You are a Sentiment Analysis API that outputs in JSON.\n"
                     # Pass the json schema to the model. Pretty printing improves results.
                                f" The JSON object must use the schema: {json.dumps(Score.model_json_schema(), indent=2)}",
                 },
